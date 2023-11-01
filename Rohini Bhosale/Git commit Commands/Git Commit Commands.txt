@@ -42,8 +42,9 @@ create mode 100644 Git commit Commands/Git Commit Commands.txt
 
 Step 8:
 C:\Users\Rajveer\FSD-Project-Submission_2023-24>git pull                                                                                                                                             
-Already up to date.    
-                                                                                                                                    Step 9:                                                                 
+Already up to date.  
+
+Step 9:                                                                 
 C:\Users\Rajveer\FSD\FSD-Project-Submission_2023-24>git push                                                  
 info: please complete authentication in your browser...                                                                                                                                                                                                                                                                                                                                         
 C:\Users\Rajveer\FSD\FSD-Project-Submission_2023-24>                                                                                                                                                                                                         
