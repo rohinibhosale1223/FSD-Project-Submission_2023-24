@@ -1,0 +1,25 @@
+The system cannot find message text for message number 0x2350 in the message file for Application.                                                                                                                          
+(c) Microsoft Corporation. All rights reserved.                                                                                                                                                                          
+C:\Users\Rajveer>git clone https://github.com/rohinibhosale1223/FSD-Project-Submission_2023-24.git              
+Cloning into 'FSD-Project-Submission_2023-24'...                                                              
+remote: Enumerating objects: 6, done.                                                                         
+remote: Counting objects: 100% (6/6), done.                                                                   
+remote: Compressing objects: 100% (4/4), done.                                                                
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0                                                  
+Receiving objects: 100% (6/6), done.                                                                                                                                                                                        
+C:\Users\Rajveer>cd FSD-Project-Submission_2023-24                                                                                                                                                                         
+C:\Users\Rajveer\FSD-Project-Submission_2023-24>git config --global user.email "rohinibhosale1223@gmail"                                                                                                                    
+C:\Users\Rajveer\FSD-Project-Submission_2023-24>git config --global user.name "Rohini Bhosale"                                                                               
+C:\Users\Rajveer\FSD-Project-Submission_2023-24> 
+C:\Users\Rajveer\FSD-Project-Submission_2023-24>git config user.email                                                    
+rohinibhosale1223@gmail.com                        
+C:\Users\Rajveer\FSD-Project-Submission_2023-24>git config user.name 
+Rohini Bhosale   
+C:\Users\Rajveer\FSD-Project-Submission_2023-24>git add .                                                                                                                                                                                                               C:\Users\Rajveer\FSD-Project-Submission_2023-24>git commit -m "Git Commands"    
+                                                                                                                     
+[main 04065a7] Git Commands                                                                                                                                                                           
+1 file changed, 13 insertions(+)                                                                                                                                                                     
+create mode 100644 Git commit Commands/Git Commit Commands.txt  
+C:\Users\Rajveer\FSD-Project-Submission_2023-24>git pull                                                                                                                                             
+Already up to date.    
+                                                                                                                                                                                                                    
