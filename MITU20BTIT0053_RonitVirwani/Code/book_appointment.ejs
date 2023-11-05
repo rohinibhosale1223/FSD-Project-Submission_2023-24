@@ -1,0 +1,33 @@
+<%
+const session = {
+    username: '' // replace with appropriate username
+};
+
+const host = "localhost";
+const db_user = "root";
+const db_password = "";
+const db_name = "hsptl";
+
+const conn = {
+    connect_error: false,
+    close: () => {}
+};
+
+if (conn.connect_error) {
+    console.log("Connection failed: " + conn.connect_error);
+}
+
+const patient_name = session.username; // replace with appropriate username
+const appointment_date = ''; // get the appointment date from the form
+const doctor_name = ''; // get the doctor name from the form
+
+const sql_insert_appointment = `INSERT INTO appointment_info (patient_name, doctor_name, appointment_date) VALUES ('${patient_name}', '${doctor_name}', '${appointment_date}')`;
+if (/* execute your insert query condition here */) {
+    // Handle successful insertion
+    console.log("Redirecting to appointment_status.ejs");
+} else {
+    // Handle insertion error
+    const booking_error = "Error: " + sql_insert_appointment + "<br>"; // get the appropriate error message
+    console.log("Redirecting to patient_dashboard.ejs");
+}
+%>

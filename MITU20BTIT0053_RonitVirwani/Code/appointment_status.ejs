@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Status</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        div {
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            background-image: url('images/background.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.55); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <% 
+        const patient_name = ;
+
+        const host = "localhost";
+        const db_user = "root";
+        const db_password = "";
+        const db_name = "hsptl";
+
+        const conn = new ;
+        if (/* check the connection error */) {
+            /* handle the connection error */
+        }
+
+        const sql_appointment = "SELECT * FROM appointment_info WHERE patient_name = '" + patient_name + "' AND appointment_date >= CURDATE() ORDER BY appointment_date ASC";
+        const result_appointment = /* execute the query and store the result */;
+
+        if (/* check if there are any rows */) { %>
+            <h2>Upcoming Appointment Details</h2>
+            <table class="table table-bordered">
+                <tr><th>Doctor Name</th><th>Appointment Date</th></tr>
+                <% 
+                /* loop through the rows and display the data accordingly */
+                while (/* loop condition */) { %>
+                    <tr>
+                        <td><%= row_doctor.doctor_name %></td>
+                        <td><%= row_appointment.appointment_date %></td>
+                    </tr>
+                <% } %>
+            </table>
+        <% } else { %>
+            <h3>No upcoming appointments</h3>
+        <% } 
+
+        /* close the database connection */
+        %>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

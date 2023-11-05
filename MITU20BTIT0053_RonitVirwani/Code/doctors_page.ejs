@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Doctors Page</title>
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2>Doctors</h2>
+    <div class="row">
+        <% 
+        const session = {}; // replace with appropriate session data
+
+        const host = "localhost";
+        const db_user = "root";
+        const db_password = "";
+        const db_name = "hsptl";
+
+        const conn = {
+            connect_error: false,
+            close: () => {}
+        };
+
+        if (conn.connect_error) {
+            console.log("Connection failed: " + conn.connect_error);
+        }
+
+        const query = "SELECT * FROM doctor_info";
+        const result = []; // replace with the result from your query
+
+        result.forEach(row => { %>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= row.doctor_name %></h5>
+                        <p class="card-text">Specialization: <%= row.specialization %></p>
+                    </div>
+                </div>
+            </div>
+        <% });
+
+        conn.close();
+        %>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

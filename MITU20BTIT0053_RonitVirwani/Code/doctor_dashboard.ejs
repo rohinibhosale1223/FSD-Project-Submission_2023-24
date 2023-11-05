@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        div {
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <% 
+        const doctor_name = ''; 
+        const result_check = {}; 
+
+        if (result_check.num_rows === 0) { %>
+            <h2>Welcome, <%= session.username %>!</h2>
+            <h3>Register Doctor Details</h3>
+            <form action="register_doctor.php" method="post">
+                <div class="form-group">
+                    <label for="doctor_name">Doctor Name:</label>
+                    <input type="text" class="form-control" id="doctor_name" name="doctor_name" required>
+                </div>
+
+                <div class="form-group">
+                <label for="specialization">Specialization:</label>
+                <input type="text" class="form-control" id="specialization" name="specialization" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <% } else { %>
+            <h2>Welcome back, <%= session.username %>!</h2>
+            <h3>Your Registered Information</h3>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Specialization</th>
+                </tr>
+                <tr>
+                    <td><%= result_check.doctor_name %></td>
+                    <td><%= result_check.specialization %></td>
+                </tr>
+            </table>
+        <% } %>
+        <% 
+        const result_appointment_requests = {}; 
+
+        if (result_appointment_requests.num_rows > 0) { %>
+            <h2>Appointment Requests</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Appointment Date</th>
+                </tr>
+                <% while () { %>
+                    <tr>
+                        <td><%= row_patient.patient_name %></td>
+                        <td><%= row_appointment_request.appointment_date %></td>
+                    </tr>
+                <% } %>
+            </table>
+        <% } else { %>
+            <h3>No appointment requests</h3>
+        <% } %>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
