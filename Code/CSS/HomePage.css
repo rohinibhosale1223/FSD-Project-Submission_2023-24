@@ -1,0 +1,139 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:ital,wght@0,600;1,400&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== CORES ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #9c4f17;
+  --first-color-alt: hsl(2, 89%, 53%);
+  --title-color: hsl(233, 20%, 25%);
+  --text-color: hsl(233, 4%, 35%);
+  --body-color: hsl(236, 100%, 97%);
+
+  /*========== Font e typography ==========*/
+  --body-font: "Roboto", sans-serif;
+  --second-font: "Lemon", cursive;
+  --biggest-font-size: 2.25rem;
+  --normal-font-size: 0.938rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.home,
+.home__container {
+  position: relative;
+}
+.home__container {
+  padding-top: 8rem;
+  height: 100vh;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+}
+
+.home__title span {
+  display: block;
+  color: var(--first-color);
+  letter-spacing: 5px;
+}
+
+.home__description,
+.home__button {
+  font-weight: 600;
+}
+.home__description {
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+.home__button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 15px 5px;
+  box-shadow: 0 8px 20px hsla(2, 100%, 45%, 0.28);
+  transition: background 0.4s;
+}
+.home__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.home__toddynho {
+  width: 400px;
+  border-radius: 30px;
+  transform: rotate(15deg);
+  left: 1rem;
+  right: 0;
+  top: 1rem;
+  margin: 0 auto;
+  animation: float-toddynho 4s ease-in-out infinite;
+}
+
+@keyframes float-toddynho {
+  0% {
+    transform: translateY(0) rotate(15deg);
+  }
+  50% {
+    transform: translateY(-1.5rem) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(15deg);
+  }
+}
+
+
+/* Para dispositivos médios */
+@media screen and (min-width: 767px) {
+  .home__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    padding-top: 4rem;
+  }
+}
+
+/* Footer removido */

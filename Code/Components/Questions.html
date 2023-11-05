@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Microsoft Interview Questions</title>
+  <link rel="stylesheet" href="../CSS/Questions.css">
+  <link rel="stylesheet" href="../CSS/Navbar.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar" >
+            <a class="navbrand" href="#">LeetCode</a>
+            <ul class="navmenu">
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./Questions.html">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+<table border = "1">
+  <tr>
+    <th onclick="sortTable(0)">Question</th>
+    <th>Solution</th>
+    <th onclick="sortTable(2)">Acceptance</th>
+    <th onclick="sortTable(3)">Difficulty</th>
+  </tr>
+  <tr>
+    <td>1. Two Sum</td>
+    <td><a href="https://leetcode.com/problems/two-sum/">Solve</a></td>
+    <td>68.3%</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>2. Add Two Numbers</td>
+    <td><a href="https://leetcode.com/problems/add-two-numbers/">Solve</a></td>
+    <td>50.3%</td>
+    <td >Easy</td>
+  </tr>
+  <tr>
+    <td>3. Longest Substring Without Repeating Characters....</td>
+    <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">Solve</a></td>
+    <td>40.9%</td>
+        <td>Medium</td>
+  </tr>
+  <tr>
+    <td>4. Median of Two Sorted Arrays</td>
+    <td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">Solve</a></td>
+    <td>33.9%</td>
+        <td >Hard</td>
+  </tr>
+  <tr>
+    <td>5. Longest Palindromic Substring</td>
+    <td><a href="https://leetcode.com/problems/longest-palindromic-substring/">Solve</a></td>
+    <td>37.0%</td>
+        <td >Hard</td>
+  </tr>
+  <tr>
+    <td>6. Zigzag Conversion</td>
+    <td><a href="https://leetcode.com/problems/zigzag-conversion/">Solve</a></td>
+    <td>32.6%</td>
+        <td >Medium</td>
+  </tr>
+  <tr>
+    <td>7. Reverse Integer</td>
+    <td><a href="https://leetcode.com/problems/reverse-integer/">Solve</a></td>
+    <td>45.5%</td>
+    <td  >Easy</td>
+  </tr>
+  <tr>
+    <td>8. String to Integer (atoi)</td>
+    <td><a href="https://leetcode.com/problems/string-to-integer-atoi/">Solve</a></td>
+    <td>27.7%</td>
+        <td >Medium</td>
+  </tr>
+  <tr>
+    <td>9. Palindrome Number</td>
+    <td><a href="https://leetcode.com/problems/palindrome-number/">Solve</a></td>
+    <td>16.7%</td>
+        <td >Medium</td>
+  </tr>
+  <tr>
+    <td>10. Regular Expression Matching</td>
+    <td><a href="https://leetcode.com/problems/regular-expression-matching/">Solve</a></td>
+    <td>54.1%</td>
+        <td >Hard</td>
+  </tr>
+  <tr>
+    <td>11. Container With Most Water</td>
+    <td><a href="https://leetcode.com/problems/container-with-most-water/">Solve</a></td>
+    <td>27.9%</td>
+        <td>Hard</td>
+  </tr>
+  <tr>
+    <td>12. Integer to Roman</td>
+    <td><a href="https://leetcode.com/problems/integer-to-roman/">Solve</a></td>
+    <td>54.0%</td>
+    <td  >Easy</td>
+  </tr>
+  <tr>
+    <td>13. Roman to Integer</td>
+    <td><a href="https://leetcode.com/problems/roman-to-integer/">Solve</a></td>
+    <td>62.6%</td>
+        <td >Medium</td>
+  </tr>
+  <tr>
+    <td>10. Regular Expression Matching</td>
+    <td><a href="https://leetcode.com/problems/longest-common-prefix/">Solve</a></td>
+    <td>59.0%</td>
+        <td>Hard</td>
+  </tr>
+  <tr>
+    <td>14. Longest Common Prefix</td>
+    <td><a href="https://leetcode.com/problems/longest-common-prefix/">Solve</a></td>
+    <td>41.2%</td>
+        <td >Medium</td>
+  </tr>
+  <tr>
+    <td>15. 3Sum</td>
+    <td><a href="https://leetcode.com/problems/3sum/">Solve</a></td>
+    <td>33.0%</td>
+        <td>Medium</td>
+  </tr>
+</table>
+</section>
+<script>
+    function sortTable(column) {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.querySelector("table");
+      switching = true;
+
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+
+        for (i = 1; i < rows.length - 1; i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("td")[column];
+          y = rows[i + 1].getElementsByTagName("td")[column];
+
+          if (column === 0) {
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+              shouldSwitch = true;
+              break;
+            }
+          } else {
+            if (parseFloat(x.innerHTML) < parseFloat(y.innerHTML)) {
+              shouldSwitch = true;
+              break;
+            }
+          }
+        }
+
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
