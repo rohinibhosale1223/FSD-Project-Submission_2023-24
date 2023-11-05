@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav class="navbar-home">
+        <h1 id="Shop_name">Electronics Wale</h1>
+        <ul class="Nav-items">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Latest Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login/sign-up</a></li>
+        </ul>
+    </nav>
+    <center><h1>Login Form</h1></center>
+    <form action="action.php">
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" name="Username" required placeholder="Enter your Username">
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" name="pass" placeholder="Enter your Password">
+            <br>
+            <button type="submit">Login</button> 
+            <br>  
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Not a <a href="signup.html"> Member? </a> 
+        </div>
+    </form>
+    <div id="login-message" class="message"></div>
+
+
+
+</body>
+<script src="login.js"></script>
+
+</html>
