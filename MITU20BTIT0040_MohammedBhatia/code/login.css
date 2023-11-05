@@ -1,0 +1,135 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, label, input, button, form, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-home {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.Nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Nav-items li {
+    margin-right: 20px;
+}
+
+.navbar-home a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+    padding: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+button[type="submit"],
+.button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    border-radius: 30px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    border-radius: 30px;
+}
+
+a {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.message {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+

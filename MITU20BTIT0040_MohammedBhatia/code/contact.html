@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar-home">
+        <h1 id="Shop_name">Electronics Wale</h1>
+        <ul class="Nav-items">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Latest Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login/sign-up</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="head">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="" alt="contact">
+            </div>
+            <div class="column">
+                <form action="#">
+                  <label for="fname">First Name</label>
+                  <br>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                  <br>
+                  <label for="lname">Last Name</label>
+                  <br>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                  <br>
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <br>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
+                  <br>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="contact.js"></script>
+</html>
