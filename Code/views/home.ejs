@@ -1,0 +1,20 @@
+<h1>Welcome to Food Website</h1>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/signup">Sign Up</a></li>
+    <li><a href="/login">Login</a></li>
+  </ul>
+</nav>
+<main>
+  <h2>Delicious Food</h2>
+  <% if (loggedUser) { %>
+  <p>Welcome, <%= loggedUser %>! You are logged in.</p>
+  <a href="/logout">Logout</a>
+  <% } else { %>
+  <p>Please sign up or log in to access more features.</p>
+  <% } %>
+</main>
+<footer>
+  <p>&copy; 2023 Food Website</p>
+</footer>
