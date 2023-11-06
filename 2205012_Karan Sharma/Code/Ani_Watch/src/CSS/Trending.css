@@ -1,0 +1,37 @@
+.Trending{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Title{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.trending-img img{
+    margin-top: 2rem;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    height: 300px;
+    width: 200px;
+    border-radius: 30px;
+}
+.gif{
+    display: flex;
+    flex-direction: row;
+}
+.gif img{
+    margin-left: 20px;
+    height: 50x;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.titles{
+    display: flex;
+    flex-direction: column;
+}
+
+.margin{
+    margin-left: 80px;
+}

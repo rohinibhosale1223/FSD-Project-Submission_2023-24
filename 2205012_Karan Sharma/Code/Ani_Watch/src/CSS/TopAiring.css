@@ -1,0 +1,125 @@
+.Main-div{
+    display: flex;
+    background-color: rgb(39, 38, 38);
+    flex-direction: row;
+    height: 590px;
+    width: 100%;
+    overflow: hidden;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    justify-content: space-between;
+}
+.div-img img{ 
+    height: 100%;
+    width: 150%;
+    /* filter: grayscale(); */
+    margin-left: -355px;
+    z-index: 2;
+    border-radius: 50px;
+    -webkit-mask-image: linear-gradient(270deg,transparent 0,rgb(36,36,40) 30%,rgb(36,36,40) 70%,transparent);
+    margin-top: 20px;
+}
+.Top-Details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 3;
+    margin-top: 106px;
+}
+.spotlight{
+    position: absolute;
+    color: #ffdd95;
+    font-size: 20px;
+    top: 20%;
+    left: 3%;
+}
+.title{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 150;
+    margin-top: 63px;
+    margin-left: 50px;
+    width: 600px;
+}
+.desc{
+    color: white;
+    width: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 40px;
+    font-size: 13px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    margin-left: 47px;
+    color: white;
+    font-size: 13px;
+}
+.icons .HD{
+    background-color: #ffdd95;
+    color: black;
+    border-radius: 2px;
+    width: 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+.icons .epi{
+    background-color: #28a745;
+    color: black;
+    border-radius: 2px;
+    width: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+.btn{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.WatchNow{
+    margin-right: 20px;
+    background-color: #ffdd95;
+    border: white;
+    color: black;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.Details {
+    position: relative;
+    margin-right: 20px;
+    background: #6a6a71!important;
+    color: white;
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 25px;
+    border: none;
+  }
+.btn-2 i{
+    color: black;
+    background:#ffdd95;
+    font-size: 18px;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    display: inline-block;
+}
+.btn-2{
+    position: absolute;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}

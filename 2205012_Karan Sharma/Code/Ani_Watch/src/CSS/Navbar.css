@@ -1,0 +1,41 @@
+.Navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: rgb(39, 38, 38);
+    height: 50px;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.Navbar ul{
+    justify-content: center;
+    align-items: center;
+}
+.Navbar ul li{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.Navbar ul li:first-of-type{
+    margin-right: auto;
+}
+li:last-of-type{
+    margin-right: 30px;
+}
+.Navbar ul li img{
+    margin-left: 40px;
+    height: 35px;
+    width: 70%;
+}
+.inputSearch{
+    border-radius: 20px;
+    height: 30px;
+    width: 100vh;
+    border: 1px solid #fff;
+    outline: none;
+    padding-left: 20px;
+}

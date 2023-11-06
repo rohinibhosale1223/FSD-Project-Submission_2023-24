@@ -1,0 +1,32 @@
+.Main-content{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+.Top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Top img{
+    margin-left: 35px;
+    height: 80px;
+    width: 60px;
+    border-radius: 10px;
+}
+.anime {
+    display: flex;
+    flex-direction: row;
+    width: 345px;
+}
+.anime-name{
+    margin-top: 15px;
+    margin-left: 20px;
+    color: white;
+}
+.bor{
+    margin-left: 20px;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,25 @@
+.Main-Upcoming{
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+    /* flex-wrap: nowrap; */
+}
+.images{
+    display: flex;
+    flex-direction: column;
+}
+.images img{
+    margin-top: 2rem;
+    margin-bottom: 15px;
+    margin-left: 70px;
+    height: 300px;
+    width: 200px;
+    border-radius: 30px;   
+}
+.details{
+    margin-left: 70px;
+}
+.WatchNow i{
+    color: black;
+}
