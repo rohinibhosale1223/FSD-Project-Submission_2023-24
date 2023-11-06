@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;     
+    box-sizing: border-box;
+}
+
+html{
+    background-color:rgb(196, 196, 196);
+    width: 100vw;
+    height: 100vh;
+    background: url("YourName.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.navbar{
+    background-color:rgb(225, 255, 0);
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    
+}
+
+.nav-content{
+    display: flex;
+    gap: 50px;
+}
+
+.main-content{
+    background-color:whitesmoke;
+    border-radius:10px;
+    width: 50%;
+    margin-top:10% ;
+}
+
+.main-content h2,p,a {
+    margin-left:10px
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
